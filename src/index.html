@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<link>
+<meta charset="UTF-8">
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+<meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+<link rel="stylesheet" href="css/all.min.css" />
+<link rel="stylesheet" href="css/materialize.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<title>ElectronSelenium</title>
+</head>
+
+<body>
+    <div class="container center-align">
+        <h3><i class="fas fa-images"></i>ImageShrink</h3>
+        <p>Choose an image to resize</p>
+
+        <form>
+            <div class="file-field input-field">
+                <div class="btn" id="open-browser">
+                    <span>Selenium open Browser</span>
+                </div>
+        </form>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/render.js"></script>
+</body>
+
+</html>

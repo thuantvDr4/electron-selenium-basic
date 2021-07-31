@@ -1,0 +1,30 @@
+{
+  "name": "electron-selenium",
+  "productName": "ElectronSelenium",
+  "version": "1.0.0",
+  "description": "app to connect with selenium",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev": "nodemon --exec electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=false --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ElectronSelenium\"",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=false --out=release-builds"
+  },
+  "author": "thuanCafe",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "electron-log": "^4.4.0",
+    "electron-packager": "^15.3.0",
+    "imagemin": "^7.0.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "selenium-webdriver": "^4.0.0-beta.4",
+    "slash": "^3.0.0"
+  }
+}
